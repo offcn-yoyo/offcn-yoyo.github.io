@@ -4,18 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yoyo老师的个人微博</title>
+    <title>Document</title>
     <style>
-        .head {
-            font-size: 50px;
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        body {
+            color: #333;
+            background: #E9EAED;
+        }
+        
+        header {
+            width: 100%;
+            height: 60px;
+            margin: 0px auto;
+            position: fixed;
+            background: #373d41;
+            display: flex;
+            align-items: center;
+        }
+        
+        header::before {
+            background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+            content: "";
+            height: 5px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        
+        .home-log {
+            width: 40%;
+        }
+        
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+        }
+        
+        .navigation a {
+            color: #fff;
+            font-size: 15px;
         }
     </style>
 </head>
 
 <body>
-    <div class="head">
-        yoyo老师的个人微博
-    </div>
+    <header>
+        <div class="home-log">
+
+        </div>
+        <ul class="navigation">
+            <li>
+                <a href="">网站首页</a>
+            </li>
+            <li>
+                <a href="">个人日志</a>
+            </li>
+            <li>
+                <a href="">教学视频</a>
+            </li>
+            <li>
+                <a href="">关于我</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+        </ul>
+    </header>
+
 </body>
+<script>
+</script>
 
 </html>
