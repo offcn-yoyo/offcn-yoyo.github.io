@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>游瑶的个人博客</title>
+    <link rel="stylesheet" href="../offcn-yoyo.github.io/view/lib/swiper/css/swiper.min.css">
     <style>
         * {
             padding: 0px;
@@ -59,6 +60,28 @@
             color: #fff;
             font-size: 15px;
         }
+        
+        .container {
+            max-width: 1440px;
+            margin: 0px auto;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .left-container {
+            width: 40%;
+            margin-top: 60px;
+        }
+        
+        .swiper-container {
+            width: 500px;
+            height: 300px;
+        }
+        
+        .swiper-container img {
+            max-width: 100%;
+        }
     </style>
 </head>
 
@@ -85,9 +108,48 @@
             </li>
         </ul>
     </header>
+    <div class="container">
+        <div class="left-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.bilibili.com/video/BV1sT4y157Lp"><img src="../offcn-yoyo.github.io/view/images/1.png" alt=""></a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="http://contentcms-bj.cdn.bcebos.com/cmspic/be2dedf9820c7ed4a6b7f548a19e3411.jpeg?x-bce-process=image/crop,x_0,y_0,w_899,h_489" alt=""></a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="http://contentcms-bj.cdn.bcebos.com/cmspic/65d0af8484efb52b2e81ab26bf264d7a.jpeg?x-bce-process=image/crop,x_0,y_0,w_930,h_506" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
+<script src="../offcn-yoyo.github.io/view/lib/swiper/js/jquery.js"></script>
+<script src="../offcn-yoyo.github.io/view/lib/swiper/js/swiper.min.js">
+</script>
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    })
 </script>
 
 </html>
